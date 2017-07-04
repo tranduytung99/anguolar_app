@@ -1,0 +1,10 @@
+<div class = "user-list" *ngFor= "let user of users" >
+  <a (click)="gotoshow(user)">
+      <div>ID: {{user.id}} </div>
+      <div>
+        {{user.email}}
+      </div>
+  </a>
+ <a routerLink="/user/{{user.id}}">View</a>
+
+</div>
